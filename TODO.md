@@ -12,9 +12,10 @@ de julio de 2010 (título, prólogo, posibles textos añadidos, orden y número 
 si esta edición sigue reproduciendo el PDF de 2010 o pasa al libro. Anotar diferencias en `NOTES.md` y en «Sobre esta
 edició», y quitar el aviso de «Esborrany» de esa página.
 
-### T-02 · Publicar: repositorio, Pages y dominio
-`git init` hecho en local, sin remoto. Crear `jtpadilla/santjoanslibro` público, encender Pages con origen GitHub
-Actions (el workflow ya está), comprobar que las páginas responden. Decidir si va en la subruta
+### T-02 · Publicar: Pages y dominio
+El repositorio público `jtpadilla/santjoanslibro` existe y `main` está subido (2026-09-08). Falta encender Pages con
+origen GitHub Actions (el workflow ya está y corre con cada push; el `deploy` falla hasta entonces) y comprobar que
+las páginas responden. Decidir si va en la subruta
 `jtpadilla.github.io/santjoanslibro/` (como masosdemorella) o con dominio propio; el `href()` y `astro.config.mjs` ya
 lo soportan. Actualizar la URL de cita en `edicio.astro` y en `README.md`.
 

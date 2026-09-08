@@ -19,7 +19,8 @@ solo es una vista de esos masters.
 
 **Estado: BOCETO** (2026-09-08, primera sesión). Reproduce el PDF de julio de 2010. **El libro de la Diputación no se ha
 podido consultar**: el usuario intentará localizar un ejemplar para escanearlo y revisar esta edición contra él (T-01).
-Nada está publicado todavía: ni repositorio en GitHub, ni Pages, ni ficha en la portada (T-02, T-03).
+El repositorio público `jtpadilla/santjoanslibro` existe desde el 2026-09-08 (primer commit del usuario); faltan Pages y la
+ficha en la portada (T-02, T-03).
 
 Idioma del libro: valenciano. UI del sitio: valenciano (como masosdemorella). Idioma de trabajo con el usuario: **castellano**.
 No se modifica el contenido del libro: la reconstrucción es fiel al PDF (erratas y todo, salvo lo anotado en `NOTES.md`).
@@ -89,7 +90,7 @@ assets/cataleg/             29 rajoles, NN-nom.jpg (orden del catálogo)
 assets/presentacio/         00-invitacio.jpg (render del PDF) + 11 fotos del acto de 2012 (las 3 restantes de source/ no son del acto)
 site/                       Astro 7. src/pages: index, [slug], cataleg, llibre, edicio, autora, robots.txt. src/components/Fitxa.astro.
                             src/lib/llibre.ts (capitols, cataleg, figures, href). content.config.ts: colecciones llibre, cataleg, meta.
-.github/workflows/deploy.yml  build + Pages en cada push a main (copiado de masosdemorella; aún sin repositorio remoto)
+.github/workflows/deploy.yml  build + Pages en cada push a main (copiado de masosdemorella)
 ```
 
 Convención de este repo: **el texto se transcribió a mano** desde `extract/text/estudio/*.txt` (5.700 palabras no

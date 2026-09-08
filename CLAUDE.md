@@ -19,8 +19,8 @@ solo es una vista de esos masters.
 
 **Estado: BOCETO** (2026-09-08, primera sesión). Reproduce el PDF de julio de 2010. **El libro de la Diputación no se ha
 podido consultar**: el usuario intentará localizar un ejemplar para escanearlo y revisar esta edición contra él (T-01).
-El repositorio público `jtpadilla/santjoanslibro` existe desde el 2026-09-08 (primer commit del usuario); faltan Pages y la
-ficha en la portada (T-02, T-03).
+Publicado en **https://jtpadilla.github.io/santjoanslibro/** (repositorio público `jtpadilla/santjoanslibro`, Pages con
+origen GitHub Actions, desde el 2026-09-08). Falta la ficha en la portada (T-03) y decidir si tendrá dominio propio (T-02).
 
 Idioma del libro: valenciano. UI del sitio: valenciano (como masosdemorella). Idioma de trabajo con el usuario: **castellano**.
 No se modifica el contenido del libro: la reconstrucción es fiel al PDF (erratas y todo, salvo lo anotado en `NOTES.md`).

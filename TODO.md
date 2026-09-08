@@ -12,12 +12,10 @@ de julio de 2010 (título, prólogo, posibles textos añadidos, orden y número 
 si esta edición sigue reproduciendo el PDF de 2010 o pasa al libro. Anotar diferencias en `NOTES.md` y en «Sobre esta
 edició», y quitar el aviso de «Esborrany» de esa página.
 
-### T-02 · Publicar: Pages y dominio
-El repositorio público `jtpadilla/santjoanslibro` existe y `main` está subido (2026-09-08). Falta encender Pages con
-origen GitHub Actions (el workflow ya está y corre con cada push; el `deploy` falla hasta entonces) y comprobar que
-las páginas responden. Decidir si va en la subruta
-`jtpadilla.github.io/santjoanslibro/` (como masosdemorella) o con dominio propio; el `href()` y `astro.config.mjs` ya
-lo soportan. Actualizar la URL de cita en `edicio.astro` y en `README.md`.
+### T-02 · ¿Dominio propio?
+Publicado en la subruta `jtpadilla.github.io/santjoanslibro/` (ver «Resueltas», T-09). Queda decidir si, como
+santjoans.es o franciscajulianquerol.es, tendrá dominio propio; `href()` y `astro.config.mjs` ya lo soportan
+(`SITE_URL`, `BASE_PATH`, `public/CNAME`). Si cambia, actualizar la URL de cita en `edicio.astro` y en `README.md`.
 
 ### T-03 · Ficha en la portada franciscajulianquerol
 Seguir «Cómo añadir un proyecto» de su `CLAUDE.md`: función `santjoanslibro()` en `tools/metriques.py` (¿qué se cuenta?:
@@ -50,4 +48,8 @@ Siete de las once fotos del acto (`DSCF*`) son de 480 × 360 px, copias reducida
 
 ## Resueltas
 
-(ninguna todavía)
+### T-09 · Publicar el repositorio y encender Pages · 2026-09-08
+Repositorio público `jtpadilla/santjoanslibro` (primer commit del usuario), Pages con origen **GitHub Actions**
+(`build_type=workflow`) y HTTPS forzado. El primer `deploy` falló hasta encender Pages, como en la portada; relanzado
+el workflow, las diez páginas responden 200, `/no-existe/` da 404 y los PDF originales se sirven en `/original/`.
+**https://jtpadilla.github.io/santjoanslibro/**

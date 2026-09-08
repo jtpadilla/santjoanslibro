@@ -90,3 +90,13 @@ el usuario (T-04).
   del modelo y la página «Información del proyecto» con la historia (presentación en el Antic Escorxador el 11/8/2010).
 - `franciscaineditos/md/Castelló/Paviment ceràmic/index.md`: texto de octubre de 2009, precursor del apartado 3.
 - `franciscabacket/markdown/drive/Copias Pendrivers/Numero 02/Sant joans/`: los mismos PDF, la invitación y la nota de prensa.
+
+---
+
+## 2026-09-08 · Publicación
+
+El usuario creó `jtpadilla/santjoanslibro` y subió el primer commit (111 ficheros) la misma noche del boceto. Pages se
+encendió con `gh api -X POST repos/jtpadilla/santjoanslibro/pages -f build_type=workflow`; el `deploy` de los dos
+primeros runs había fallado por no estar encendido, y el tercero, lanzado a mano con `gh workflow run`, publicó el
+sitio en https://jtpadilla.github.io/santjoanslibro/ (subruta, sin dominio propio de momento: T-02). El `build` del
+workflow no necesita nada fuera del repositorio: los masters, las imágenes y los PDF van dentro.

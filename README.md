@@ -8,7 +8,7 @@ libro en 2012** (*Paviment ceràmic de la casa Santjoans (Cinctorres)*, col. Bib
 **Estado: boceto** (2026-09-08). Reproduce el PDF de julio de 2010, la última versión del texto que se conserva como
 texto; el libro de la Diputación aún no se ha podido consultar (ver `TODO.md`, T-01).
 
-Repositorio: [github.com/jtpadilla/santjoanslibro](https://github.com/jtpadilla/santjoanslibro). Sitio: *pendiente de encender Pages* (`jtpadilla.github.io/santjoanslibro`). Forma parte de la familia de sitios de la autora:
+**https://jtpadilla.github.io/santjoanslibro/** · repositorio [github.com/jtpadilla/santjoanslibro](https://github.com/jtpadilla/santjoanslibro). Forma parte de la familia de sitios de la autora:
 [franciscajulianquerol.es](https://franciscajulianquerol.es/). El visor del pavimento, nacido del mismo trabajo, es
 [santjoans.es](https://santjoans.es/).
 

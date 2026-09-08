@@ -1,0 +1,33 @@
+# Metadatos del libro. La portada y la portadilla son las del PDF de julio de 2010 (source/EstudioSantjoans.pdf).
+llibre:
+  titol: "Paviment ceràmic de la casa Sanjoan i Sousa"
+  subtitol: "Cinctorres"
+  autora: "Francisca Julian Querol"
+  llengua: ca-ES-valencia
+  # Portada: "Autora: Francisca Julian Querol · Maig 2010"; firma final: "Paquita, març 2010".
+  data_text: 2010-05-01
+  # El PDF de julio (metadato Author "orengad": Lari Orenga, que maquetó los documentos de santjoans.es) se hizo
+  # para publicarlo en la web del visor; el de mayo lleva en la portada "Tutora: Pilar Escuder Mollón · 2º ciclo".
+  data_pdf: 2010-07-08
+  context: >
+    Treball de final del segon cicle de la Universitat per a Majors de la Universitat Jaume I, tutelat per la
+    professora Pilar Escuder Mollón, presentat el maig de 2010.
+  portada_imatge: assets/images/01-portada-paviment-del-salo.jpg
+  # La edición impresa, según la ficha de las librerías (todostuslibros.com, consultada el 8 de septiembre de 2026)
+  edicio_impresa:
+    titol: "Paviment ceràmic de la casa Santjoans (Cinctorres)"
+    autoria: "Julián Querol, Francisca"
+    editorial: "Servei de Publicacions de la Diputació de Castelló"
+    lloc: "Castelló de la Plana"
+    any: 2012
+    data: "2012-07-30"
+    colleccio: "Biblioteca Popular"
+    isbn13: "978-84-15301-12-7"
+    pagines: 78
+    dimensions: "20 × 12 cm"
+    enquadernacio: "rústica"
+    preu: "8,00 €"
+    estat: "no disponible"
+    url: "https://www.todostuslibros.com/libros/paviment-ceramic-de-la-casa-santjoans_978-84-15301-12-7"
+    presentacio: "2012-11-23"
+    presentacio_lloc: "Sala de Premsa de la Diputació de Castelló"

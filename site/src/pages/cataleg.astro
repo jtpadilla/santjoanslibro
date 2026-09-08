@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Base from '../layouts/Base.astro';
+import { cataleg, figures, href, slugOf, titolCurt } from '../lib/llibre';
+
+const fitxes = await cataleg();
+const figs = await figures();
+const rajoles = import.meta.glob<ImageMetadata>('../../../assets/cataleg/*.jpg', { eager: true, import: 'default' });
+const fotos = import.meta.glob<ImageMetadata>('../../../assets/images/*.jpg', { eager: true, import: 'default' });
+const perFitxer = (m: Record<string, ImageMetadata>) => Object.fromEntries(Object.entries(m).map(([k, v]) => [k.split('/').pop()!, v]));
+const rajola = perFitxer(rajoles);
+const foto = perFitxer(fotos);
+---
+<Base title="Catàleg" description="Les rajoles del paviment de la casa Santjoans catalogades en el llibre, en imatges, i les fotografies del text.">
+  <h1>Catàleg</h1>
+  <p>Les {fitxes.length} rajoles que l'autora va catalogar en l'apartat 3.7, «una petita mostra entre totes les que hi ha al paviment». Cada imatge porta a la seua fitxa, amb les mesures, els colors, la cronologia i l'auca d'on prové el dibuix. Les fotografies són les del treball, a la resolució amb què es van entregar.</p>
+  <ul class="galeria rajoles">
+    {fitxes.map((f) => (
+      <li>
+        <figure>
+          <a href={href(`paviment/#fitxa-${f.id}`)} title="Ves a la fitxa">
+            <Image src={rajola[f.data.imatge.split('/').pop()!]} alt={f.data.o ?? f.data.d} width={480} />
+          </a>
+          <figcaption><span class="num">{f.id}</span>{f.data.nom}<span class="on">{f.data.cr ? `[Cr.] ${f.data.cr}` : ''}</span></figcaption>
+        </figure>
+      </li>
+    ))}
+  </ul>
+
+  <h2 id="text">Fotografies del text</h2>
+  <p>Les {figs.length} fotografies i mapes dels capítols 1 a 3, en l'ordre en què apareixen. El llibre no els posa peu: els d'ací són d'esta edició. Cada imatge enllaça amb el fitxer a resolució original.</p>
+  <ul class="galeria">
+    {figs.map((f) => (
+      <li>
+        <figure>
+          <a href={foto[f.file].src} title="Obri la imatge a resolució original">
+            <Image src={foto[f.file]} alt={f.caption} width={640} />
+          </a>
+          <figcaption>
+            <span class="num">{f.n}</span>{f.caption}
+            <a class="on" href={href(`${slugOf(f.capitol)}/`)}>{titolCurt(f.capitol.data.title)}</a>
+          </figcaption>
+        </figure>
+      </li>
+    ))}
+  </ul>
+</Base>
+<style is:global>main { width: min(100% - 2.5rem, 60rem); }</style>

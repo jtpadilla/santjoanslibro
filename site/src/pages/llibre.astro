@@ -1,0 +1,65 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Base from '../layouts/Base.astro';
+import { href, llibre } from '../lib/llibre';
+
+const e = llibre.edicio_impresa;
+const fotos = import.meta.glob<ImageMetadata>('../../../assets/presentacio/*.jpg', { eager: true, import: 'default' });
+const perFitxer = Object.fromEntries(Object.entries(fotos).map(([k, v]) => [k.split('/').pop()!, v]));
+const invitacio = perFitxer['00-invitacio.jpg'];
+// Les fotografies de l'acte, amb un peu curt d'esta edició. Les tres de la sala de premsa que no són de l'arxiu
+// familiar (DSCF*) són de baixa resolució (480 × 360): es mostren igualment.
+const acte: [string, string][] = [
+  ['01-taula-de-la-presentacio.jpg', 'La taula de la presentació, a la Sala de Premsa de la Diputació: l’autora, a la dreta.'],
+  ['02-sala-de-premsa-de-la-diputacio.jpg', 'La Sala de Premsa, amb el visor santjoans.es a la pantalla.'],
+  ['03-la-taula-amb-el-visor-en-pantalla.jpg', 'La presentació, amb el llibre damunt la taula.'],
+  ['04-el-visor-santjoans-es-en-pantalla.jpg', 'El visor «Ceràmica Zoo-Mòrfica del palacio de Santjoans», que la Diputació va presentar junt amb el llibre.'],
+  ['05-autora-amb-els-diputats.jpg', 'L’autora amb els diputats i l’alcalde de Cinctorres, després de l’acte.'],
+  ['06-autora-amb-els-diputats-2.jpg', 'Amb els diputats, davant del cartell de la Diputació.'],
+  ['07-autora-signant.jpg', 'L’autora signant exemplars.'],
+  ['08-el-public.jpg', 'El públic, al saló de la Diputació.'],
+  ['09-autora-a-la-diputacio.jpg', 'L’autora, a la Diputació, el matí de la presentació.'],
+  ['10-autora-pel-carrer-de-castello.jpg', 'Pel carrer, a Castelló, el mateix dia.'],
+  ['11-autora-amb-una-amiga.jpg', 'Amb una amiga, davant de la Diputació.'],
+];
+---
+<Base title="El llibre" description="El llibre de la Diputació de Castelló (2012), la seua presentació i el treball de 2010 del qual ix.">
+  <article class="text">
+    <h1>El llibre</h1>
+    <p>El text que es llig ací va tindre tres vides: el <strong>treball de la Universitat per a Majors</strong> (maig de 2010), el <strong>PDF publicat en la web del visor</strong> santjoans.es (juliol de 2010) i el <strong>llibre de la Diputació de Castelló</strong> (2012). Esta edició digital reprodueix el segon, que és l'últim text de l'autora que es conserva en format editable; el llibre de la Diputació encara no s'ha pogut consultar (vegeu <a href={href('edicio/')}>Sobre esta edició</a>).</p>
+
+    <h2>L'edició de la Diputació de Castelló (2012)</h2>
+    <p>El Servei de Publicacions de la Diputació de Castelló va editar el treball dins de la col·lecció «{e.colleccio}», amb estes dades de catàleg (fitxa de <a href={e.url}>les llibreries</a>, on consta com a <strong>{e.estat}</strong>):</p>
+    <blockquote class="fitxa-biblio">
+      <p>{e.autoria}: <em>{e.titol}</em>. {e.lloc}: {e.editorial}, {e.any}. {e.pagines} p., {e.dimensions}, {e.enquadernacio}. Col·lecció «{e.colleccio}». ISBN {e.isbn13}. Preu de catàleg: {e.preu}.</p>
+    </blockquote>
+    <p>Fixeu-vos que el títol canvia: el treball de 2010 diu <em>Paviment ceràmic de la casa Sanjoan i Sousa</em> i el llibre, <em>Paviment ceràmic de la casa Santjoans</em>, que és com el poble anomena la casa. Amb {e.pagines} pàgines a {e.dimensions}, el llibre té més pàgines que el PDF de 58, cosa que fa pensar en una maqueta diferent i potser en algun text afegit; fins que no es tinga un exemplar no es pot dir més.</p>
+
+    <h2>La presentació, el 23 de novembre de 2012</h2>
+    <p>La Diputació el va presentar el divendres 23 de novembre de 2012 a les 11.30 a la seua Sala de Premsa, a Castelló, amb els diputats de Cultura i de Promoció Econòmica i l'alcalde de Cinctorres, Andreu Blesa. Segons la nota de premsa de la Diputació, el diputat de Cultura va dir que «el salón del Palacio y su admirable pavimento son, sin duda, un tesoro histórico y artístico desconocido para muchos», i que la Diputació havia col·laborat amb l'autora «para cubrir esta carencia». En el mateix acte es va presentar el visor <a href="https://santjoans.es/">santjoans.es</a>, que feia dos anys que funcionava.</p>
+    <figure class="figura invitacio">
+      <a href={invitacio.src} title="Obri la invitació a mida completa"><Image src={invitacio} alt="Invitació de la Diputació de Castelló a la presentació del llibre, el 23 de novembre de 2012" width={520} /></a>
+      <figcaption>La invitació del president de la Diputació a la presentació del llibre.</figcaption>
+    </figure>
+    <ul class="galeria acte">
+      {acte.map(([f, peu]) => (
+        <li>
+          <figure>
+            <a href={perFitxer[f].src} title="Obri la fotografia a mida completa"><Image src={perFitxer[f]} alt={peu} width={640} /></a>
+            <figcaption>{peu}</figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+
+    <h2>El treball de 2010</h2>
+    <p>{llibre.context} L'autora l'havia acabat el març («Paquita, març 2010», signa la bibliografia) i el va presentar en públic l'11 d'agost de 2010 a l'Antic Escorxador de Cinctorres, dins de l'Agost Cultural, junt amb el visor del paviment que el seu fill havia programat i les fotografies del seu germà Tadeo. De la web del visor ix el PDF que reprodueix esta edició: <a href={href('original/EstudioSantjoans.pdf')}>PDF de juliol de 2010</a> (3 MB, maquetat a 17 × 24 cm). El treball tal com es va entregar a la Universitat també es conserva: <a href={href('original/treball Sanjoan.pdf')}>PDF de maig de 2010</a> (12 MB, A4, amb les fotografies a més resolució, que són les que es veuen ací).</p>
+  </article>
+</Base>
+<style is:global>main { width: min(100% - 2.5rem, 60rem); }</style>
+<style>
+  .invitacio img { max-height: none; }
+  .fitxa-biblio { font-style: normal; }
+  .fitxa-biblio em { font-style: italic; }
+</style>

@@ -1,0 +1,49 @@
+---
+import Base from '../layouts/Base.astro';
+import { href, llibre } from '../lib/llibre';
+const e = llibre.edicio_impresa;
+---
+<Base title="Sobre esta edició">
+  <article class="text">
+    <h1>Sobre esta edició</h1>
+    <p><em>{llibre.titol}. {llibre.subtitol}</em>, de {llibre.autora}, és l'estudi del paviment ceràmic zoomòrfic del saló noble del Palau Santjoans de Cinctorres. {llibre.context} La Diputació de Castelló el va publicar en llibre el {e.any} (<a href={href('llibre/')}>El llibre</a>).</p>
+    <p><strong>Esta edició digital reprodueix el PDF de juliol de 2010</strong>, la versió del treball que l'autora va donar per bona per a publicar-la en la web del visor santjoans.es, i que és l'últim text seu que es conserva com a text. Es dóna tal com ella el va deixar, amb una regla senzilla: <strong>no s'hi canvia res</strong> —ni les formes valencianes, ni els castellanismes, ni les errates—. Les úniques intervencions són tècniques i s'expliquen ací.</p>
+    <p class="avis">Esborrany. Esta edició s'ha fet sense tindre a mà el llibre de la Diputació. Quan se'n localitze un exemplar, es compararà amb este text i s'anotaran ací les diferències.</p>
+
+    <h2>Les tres versions del text</h2>
+    <ul>
+      <li><strong>Maig de 2010, el treball de la Universitat.</strong> 47 pàgines en A4, amb «Tutora: Pilar Escuder Mollón» i «2º ciclo» a la portada. Les fotografies hi van a més resolució que en cap altra versió, i per això les imatges d'esta edició es prenen d'ací.</li>
+      <li><strong>Juliol de 2010, el PDF del visor.</strong> 58 pàgines maquetades a 17 × 24 cm per Lari Orenga per a la web santjoans.es. El text és el mateix amb retocs menuts: la portada perd la tutora, alguna fitxa canvia de nom (la <em>vaca</em> del catàleg era un <em>bou envestint</em> al maig) i s'esmena alguna paraula. <strong>És el text d'esta edició.</strong></li>
+      <li><strong>2012, el llibre de la Diputació.</strong> {e.pagines} pàgines a {e.dimensions}, ISBN {e.isbn13}. No s'ha pogut consultar encara.</li>
+    </ul>
+
+    <h2>Què s'ha recuperat</h2>
+    <ul>
+      <li><strong>Tot el text del PDF de juliol de 2010.</strong> El PDF conservava el text com a text (no era un escaneig): s'ha transcrit a Markdown i s'ha comprovat paraula per paraula contra el PDF, en recompte i en ordre, amb un guió que forma part del repositori.</li>
+      <li><strong>Les 13 fotografies i mapes del text i les 29 rajoles del catàleg.</strong> Els PDF les duien trossejades en bandes; s'han retallat de les pàgines del PDF de maig, renderitzades a 300 punts per polzada, i en el <a href={href('cataleg/')}>catàleg</a> es poden obrir a eixa mida.</li>
+      <li><strong>Les set notes al peu</strong>, les cursives (els documents de l'Arxiu Històric transcrits) i les llistes.</li>
+      <li><strong>La paginació del PDF de 2010</strong>: els números xicotets al marge del text indiquen on començava cada pàgina, per a poder-lo citar. No és la paginació del llibre de la Diputació.</li>
+    </ul>
+
+    <h2>Què és d'esta edició, i no del llibre</h2>
+    <ul>
+      <li>Els <strong>peus de les fotografies</strong>: el treball no en posava. Són descripcions curtes, escrites per a esta edició.</li>
+      <li>Els <strong>noms curts de les fitxes</strong> del catàleg («Pavó reial», «Vaca»…), trets del camp [O.] de cada una per a poder navegar-les. Les fitxes es reprodueixen senceres, amb les lletres del llibre.</li>
+      <li>La fitxa 5 del catàleg etiqueta les mesures com a [D.] en lloc de [M.]: és una errata de l'original que ací es corregeix, perquè els camps de la fitxa han de tindre nom diferent. Està anotada al repositori.</li>
+      <li>La portada diu <em>Sanjoan i Sousa</em>, l'índex diu <em>Naixement de la casa Sanjoan</em> i el capítol 2 s'encapçala <em>Naixement de la casa Santjoans</em>; l'apartat 2.2 és <em>Sanjoan</em> a l'índex i <em>Santjoan</em> al text. S'ha respectat el text de cada lloc.</li>
+    </ul>
+
+    <h2>Referència bibliogràfica</h2>
+    <blockquote class="fitxa">
+      <p>{e.autoria}: <em>{e.titol}</em>. {e.lloc}: {e.editorial}, {e.any}. {e.pagines} p., {e.dimensions}. Col·lecció «{e.colleccio}». ISBN {e.isbn13}.</p>
+    </blockquote>
+    <p>Per a citar esta edició digital: Julián Querol, Francisca: <em>{llibre.titol}. {llibre.subtitol}</em> [treball de 2010, versió de juliol]. Edició digital a cura de la família, 2026. <span class="url">https://jtpadilla.github.io/santjoanslibro/</span></p>
+
+    <h2>Drets i llicència</h2>
+    <p>El text i les fotografies són de Francisca Julián Querol i del seu arxiu familiar; es publiquen amb la llicència <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ca" rel="license">Creative Commons Reconeixement-NoComercial-SenseObraDerivada 4.0</a>: es poden copiar i compartir citant l'autora, sense ús comercial i sense modificar-los. Les dues auques fotografiades al capítol 3 són publicacions d'altri que el treball reprodueix com a exemple. El programari que genera esta edició és lliure (llicència MIT).</p>
+
+    <h2>Com s'ha fet</h2>
+    <p>La recuperació és reproduïble: el text i les imatges s'han extret dels PDF amb programari lliure (Poppler) i s'han convertit a fitxers de text pla (Markdown i YAML) i JPEG, que són els nous originals del llibre. Este lloc web és només una manera de llegir-los. Tot el procés, les decisions preses i els problemes trobats estan documentats al <a href="https://github.com/jtpadilla/santjoanslibro">repositori del projecte</a>, on també es poden proposar correccions.</p>
+    <p><a href={href('original/EstudioSantjoans.pdf')}>Descarrega el PDF de juliol de 2010</a> (3 MB), la font d'esta edició, o el <a href={href('original/treball Sanjoan.pdf')}>PDF de maig de 2010</a> (12 MB).</p>
+  </article>
+</Base>

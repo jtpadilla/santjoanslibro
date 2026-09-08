@@ -1,0 +1,103 @@
+---
+import '@fontsource/eb-garamond/400.css';
+import '@fontsource/eb-garamond/400-italic.css';
+import '@fontsource/eb-garamond/500.css';
+import '@fontsource/eb-garamond/600.css';
+import '../styles/global.css';
+import { getImage } from 'astro:assets';
+import { href, llibre } from '../lib/llibre';
+import portada from '../../../assets/images/01-portada-paviment-del-salo.jpg';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+const { title, description = `${llibre.titol}. ${llibre.subtitol}, de ${llibre.autora}. L'estudi del paviment ceràmic zoomòrfic del Palau Santjoans de Cinctorres, publicat per la Diputació de Castelló el 2012. Edició digital.`, lang = 'ca' } = Astro.props;
+const fullTitle = title ? `${title} · ${llibre.titol}` : `${llibre.titol} — ${llibre.subtitol}`;
+const nav = [
+  { path: '', label: 'Índex' },
+  { path: 'cataleg/', label: 'Catàleg' },
+  { path: 'llibre/', label: 'El llibre' },
+  { path: 'autora/', label: "L'autora" },
+  { path: 'edicio/', label: 'Sobre esta edició' },
+];
+const current = Astro.url.pathname;
+// Metadades socials (Open Graph / Twitter) i URL canònica; la imatge és la portada retallada a 1200×630
+const abs = (p: string) => (Astro.site ? new URL(p, Astro.site).href : p);
+const canonical = abs(current);
+const og = await getImage({ src: portada, width: 1200, height: 630, fit: 'cover', format: 'jpg' });
+const ogImage = abs(og.src);
+const ogAlt = 'El paviment ceràmic del saló principal de la casa Santjoans, amb les rajoles d’animals en diagonal';
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={llibre.autora} />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href={href('favicon.svg')} type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href={href('sitemap-index.xml')} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={`${llibre.titol}. ${llibre.subtitol}`} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={ogAlt} />
+    <meta property="og:locale" content="ca_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org', '@type': 'Book', name: `${llibre.titol}. ${llibre.subtitol}`, inLanguage: 'ca',
+      author: { '@type': 'Person', name: 'Francisca Julián Querol' },
+      isbn: llibre.edicio_impresa.isbn13, numberOfPages: llibre.edicio_impresa.pagines, datePublished: String(llibre.edicio_impresa.any),
+      publisher: { '@type': 'Organization', name: llibre.edicio_impresa.editorial },
+      license: 'https://creativecommons.org/licenses/by-nc-nd/4.0/', url: Astro.site ? new URL(import.meta.env.BASE_URL, Astro.site).href : undefined,
+      image: ogImage,
+    })} />
+    <script is:inline>
+      // Tema guardat per l'usuari, abans de pintar (evita el parpelleig)
+      try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch {}
+    </script>
+  </head>
+  <body>
+    <a class="salta" href="#contingut">Ves al contingut</a>
+    <header class="capcalera">
+      <a class="marca" href={href('')}>
+        <span class="marca-titol">{llibre.titol}</span>
+        <span class="marca-sub">{llibre.subtitol} · {llibre.autora}</span>
+      </a>
+      <nav aria-label="Principal">
+        {nav.map((n) => (
+          <a href={href(n.path)} aria-current={current === href(n.path) ? 'page' : undefined}>{n.label}</a>
+        ))}
+        <button id="tema" type="button" aria-label="Canvia entre tema clar i fosc" title="Tema clar / fosc">◐</button>
+      </nav>
+    </header>
+    <main id="contingut">
+      <slot />
+    </main>
+    <footer class="peu">
+      <p>{llibre.titol}. {llibre.subtitol} — text i fotografies © <a href={href('autora/')}>Francisca Julián Querol</a> i arxiu familiar. Llicència <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ca" rel="license">CC BY-NC-ND 4.0</a>.</p>
+      <p>Edició digital a partir del PDF de 2010 del treball, que la Diputació de Castelló va publicar en llibre el 2012. <a href={href('edicio/')}>Com s'ha fet</a> · <a href={href('original/EstudioSantjoans.pdf')}>PDF original</a> · <a href="https://santjoans.es/">El visor del paviment</a> · <a href="https://github.com/jtpadilla/santjoanslibro">Repositori</a></p>
+      <p>Tota l'obra de l'autora, amb els altres llocs de la família: <a href="https://franciscajulianquerol.es/ca/">Francisca Julián Querol</a>.</p>
+    </footer>
+    <script>
+      const btn = document.getElementById('tema');
+      btn?.addEventListener('click', () => {
+        const root = document.documentElement;
+        const dark = root.dataset.theme
+          ? root.dataset.theme === 'dark'
+          : matchMedia('(prefers-color-scheme: dark)').matches;
+        root.dataset.theme = dark ? 'light' : 'dark';
+        try { localStorage.setItem('tema', root.dataset.theme); } catch {}
+      });
+    </script>
+  </body>
+</html>

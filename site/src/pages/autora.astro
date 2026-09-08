@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import { href } from '../lib/llibre';
+import francisca from '../assets/autors/francisca-julian-querol.jpg';
+---
+<Base title="L'autora" description="Francisca Julián Querol («Paquita»), autora de l'estudi del paviment ceràmic de la casa Santjoans de Cinctorres.">
+  <article class="text">
+    <h1>L'autora</h1>
+
+    <div class="retrats">
+      <figure>
+        <Image src={francisca} alt="Francisca Julián Querol" width={360} height={360} loading="eager" />
+        <figcaption><strong>Francisca Julián Querol</strong><br />«Paquita» · el text i l'estudi</figcaption>
+      </figure>
+    </div>
+
+    <p><strong>Francisca Julián Querol</strong>, Paquita, va nàixer a Cinctorres l'any 1945. De xicoteta vivia just davant de la casa Santjoans, i son pare, Tadeo Julian, el ferrer del poble, li contava en tornar d'arreglar-hi alguna cosa que «a la casa de don Vicent hi ha un saló amb rajoles d'animals que tu no has vist mai». No el va veure fins molts anys després, com conta al <a href={href('situacio/')}>capítol 1</a>.</p>
+    <p>Ja jubilada, va cursar la Universitat per a Majors de la Universitat Jaume I. El seu treball de final del primer cicle va ser <em>Masies de Morella</em> (publicat el 2006, i que es pot llegir a <a href="https://jtpadilla.github.io/masosdemorella/">masosdemorella</a>); el del segon cicle, este estudi del paviment de la casa Santjoans, tutelat per la professora Pilar Escuder Mollón i defensat el maig de 2010. La Diputació de Castelló el va publicar en llibre el 2012 (vegeu <a href={href('llibre/')}>El llibre</a>).</p>
+    <p>De l'estudi va nàixer, l'estiu de 2010, el visor <a href="https://santjoans.es/">santjoans.es</a>: el seu germà Tadeo va fotografiar una a una les 434 rajoles del saló i el seu fill Juan Tadeo va programar l'aplicació que permet recórrer-les. Es va presentar l'11 d'agost de 2010 a l'Antic Escorxador de Cinctorres, i el 2026 es va reescriure sencer perquè continue funcionant.</p>
+
+    <h2>Després</h2>
+    <p>Entre 2014 i 2016 va recórrer la rambla de Celumbres identificant i descrivint el que hi trobava, i d'aquell treball va eixir la guia <a href="https://ramblacelumbres.org/">ramblacelumbres.org</a>. Durant setze anys va escriure el blog <a href="https://jtpadilla.github.io/lesmeuescoses/">Les meues coses</a>, i els textos que quedaven al seu ordinador es lligen a <a href="https://jtpadilla.github.io/franciscaineditos/">Escrits inèdits</a>. Tota la seua obra, amb les xifres i els enllaços, és a <a href="https://franciscajulianquerol.es/ca/">franciscajulianquerol.es</a>.</p>
+
+    <h2>Esta edició</h2>
+    <p>Este lloc és una iniciativa familiar sense ànim de lucre, sense publicitat ni galetes, perquè el treball de Paquita continue a la vista de qui vulga mirar-lo. L'ha preparat <strong>Juan Tadeo Padilla Julián</strong>, fill de l'autora, que és també el contacte per a qualsevol correcció, a través del <a href="https://github.com/jtpadilla/santjoanslibro">repositori del projecte</a>.</p>
+  </article>
+</Base>
+<style>
+  .retrats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin: 0 0 2rem; }
+  .retrats figure { margin: 0; text-align: center; width: 12rem; }
+  .retrats img { border-radius: 50%; width: 11rem; height: 11rem; object-fit: cover; margin: 0 auto 0.6rem; box-shadow: 0 8px 24px -12px rgba(0,0,0,0.5); }
+  .retrats figcaption { font-family: var(--sans); font-size: 0.85rem; color: var(--tinta-2); line-height: 1.4; }
+</style>

@@ -1,0 +1,15 @@
+# IDE y sistema
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+__pycache__/
+
+# Derivados de extract/extract.sh: se regeneran a partir de los PDF (son pesados).
+# text/ y xml/ = texto y posiciones por página; render/ = PNG de cada página a 300 ppp
+extract/text/
+extract/xml/
+extract/render/
+
+# El proyecto Astro tiene su propio .gitignore en site/ (dist, node_modules, .astro, logs)

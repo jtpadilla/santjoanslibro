@@ -1,0 +1,343 @@
+# Las 29 fichas del catálogo (apartado 3.7, págs. 27-55 del PDF de julio de 2010), transcritas tal cual,
+# con sus variantes de puntuación y sus erratas. Los campos siguen las letras del propio catálogo:
+#   d = [D.] Denominació · m = [M.] Mesures · c = [C.] Color · f = [F.] Fabricació · cr = [Cr.] Cronologia
+#   o = [O.] Ornamentació · lf = [L.F.] Localització i funcions · ob = [Ob.] Observacions
+# `id` numera las fichas en el orden del libro; `nom` es el título corto de esta edición (para navegar), no está
+# en el original. `pagina` es la del PDF.
+# `imatge` es el recorte de extract/images.py, tomado del PDF de mayo (mejor resolución).
+- id: "01"
+  nom: Pavó reial
+  pagina: 27
+  imatge: cataleg/01-pavo-reial.jpg
+  d: Rajola quadrada de dibuix complet sense enllaços.
+  m: 20,50x20,50 cm.
+  c: Verd, marró, groc, morat; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c
+  o: Pavó real sobre illeta i rama
+  lf: Cinctorres, Casa Santjoans i Sousa paviment saló principal
+  ob: Procedeix de l’auca Sol i Lluna, editada en València, per Agustin Laborda 1752.
+- id: "02"
+  nom: Vaca
+  pagina: 28
+  imatge: cataleg/02-vaca.jpg
+  d: Rajola quadrada de dibuix complet sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: Verd clar, groc, taronja, marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790c.
+  o: Vaca sobre illeta diagonal i fulles.
+  lf: Cinctorres, casa Santjoans i Sousa paviment saló.
+  ob: Procedeix de Auca de Animales terrestres. D’Agustin Laborda editada en València 1760.
+- id: "03"
+  nom: Tortuga
+  pagina: 29
+  imatge: cataleg/03-tortuga.jpg
+  d: Rajola quadrada de dibuix complet sense enllaços.
+  m: 20,50x20,50 cm.
+  c: Groc, taronja; perfilat amb manganesos.
+  f: València.
+  cr: 1790c.
+  o: Tortuga amb eix diagonal.
+  lf: Cinctorres casa Santjoans i Sousa, paviment saló principal.
+  ob: Procedeix de Auca con Animales acuáticos V.d. d’Agustin Laborda, editada en València 1780.
+- id: "04"
+  nom: Ovella
+  pagina: 30
+  imatge: cataleg/04-ovella.jpg
+  d: Rajola quadrada de dibuix complet sense enllaços.
+  m: 20,50x 20,50.
+  c: Verd, groc, taronja, marró; perfilats amb manganesos.
+  f: València.
+  cr: 1790c
+  o: Ovella amb una flor a la boca sobre illeta diagonal amb fulles, rama i vegetació.
+  lf: Cinctorres, casa Santjoans i Sousa, paviment saló principal
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda, editada en València 1760.
+- id: "05"
+  nom: Serp
+  pagina: 31
+  imatge: cataleg/05-serp.jpg
+  d: Rajola quadrada de dibuix complet, sense enllaços.
+  m: 20,50 x 20,50.
+  c: Verd, groc, marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790c.
+  o: Serp sobre illeta fictícia.
+  lf: Cinctorres, casa Santjoans i Sousa, paviment saló principal.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda, editada en València 1760.
+- id: "06"
+  nom: Cuco
+  pagina: 32
+  imatge: cataleg/06-cuco.jpg
+  d: Rajola quadrada de dibuix complet, sense enllaços.
+  m: 20,50x20,50.
+  c: Verd, groc, taronja, marró, negre; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Cuco amb rama al pic sobre illeta i fulles amb eix diagonal.
+  lf: Cinctorres, casa Santjoans i Sousa paviment del saló principal.
+  ob: "Possiblement el model és d’un auca anònima de meitat s.XVIII: Rajola quadrada de dibuix complet, sense enllaços."
+- id: "07"
+  nom: Sargantana
+  pagina: 33
+  imatge: cataleg/07-sargantana.jpg
+  d: Rajola quadrada de dibuix complet, sense enllaços.
+  m: 20,50 x20,50.
+  c: Groc, marró, negre; perfilat amb manganesos.
+  f: València.
+  cr: "1790."
+  o: Sargantana
+  lf: Cinctorres, casa Santjoans i Sousa, paviment ceràmic.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda, editada en València 1760.
+- id: "08"
+  nom: Balena
+  pagina: 34
+  imatge: cataleg/08-balena.jpg
+  d: Rajola quadrada de dibuix complet, sense enllaços.
+  m: 20,50 x20,50.
+  c: Verd, blau, groc, marró; perfilat amb manganesos.
+  f: València.
+  cr: "1790."
+  o: Balena.
+  lf: Cinctorres casa Santjoans i Sousa paviment ceràmic .
+  ob: Procedeix de Auca de Animales acuaticos d’Agustin Laborda, editada enValència 1780.
+- id: "09"
+  nom: Pollastre
+  pagina: 35
+  imatge: cataleg/09-pollastre.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50.
+  c: Verd, groc, marró, taronja, blau; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Pollastre sobre una pota i damunt d’una illeta amb vegetació i fulles.
+  lf: Cinctorres, casa palau Santjoans i Sousa paviment ceràmic.
+  ob: Possiblement procedeix de l’Auca Sol i lluna, editada en València per Agustin Laborda 1752.
+- id: "10"
+  nom: Cavall
+  pagina: 36
+  imatge: cataleg/10-cavall.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50.
+  c: Verd clar, groc, marró, negre; perfilat amb manganesos.
+  f: València.
+  cr: "1790."
+  o: Cavall encabritat sobre illeta amb rames, eix diagonal.
+  lf: Cinctorres casa Santjoans i Sousa, paviment ceràmic.
+  ob: Es dubtós d’on procedeix el dibuix, pot ser de tractats de Zoologia o d’Emblemàtica o també de series ornamentals.
+- id: "11"
+  nom: Caragol
+  pagina: 37
+  imatge: cataleg/11-caragol.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50.
+  c: Verd, groc, blau, marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Caragol sobre illeta fictícia amb l’eix diagonal.
+  lf: Cinctorres casa Santjoans i Sousa; paviment ceràmic.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda, editada en València 1760.
+- id: "12"
+  nom: Galgo
+  pagina: 38
+  imatge: cataleg/12-galgo.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços
+  m: 20,50 x 20,50 cm.
+  c: Verd clar, groc, marró, negre; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Galgo amb collar encabritat, sobre illeta en l’eix diagonal.
+  lf: Cinctorres casa Santjoans i Sousa; paviment del saló principal.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda, editada en València 1760.
+- id: "13"
+  nom: Dromedari
+  pagina: 39
+  imatge: cataleg/13-dromedari.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: Verd, groc, blau, taronja marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Dromedari sobre illeta fictícia.
+  lf: Cinctorres casa palau de Santjoans i Sousa; paviment.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda; editada en València 1760.
+- id: "14"
+  nom: Sardina
+  pagina: 40
+  imatge: cataleg/14-sardina.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: groc, blau, marró; perfilat parcialment amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Sardina; Sobre illeta aquosa fictícia.
+  lf: Cinctorres casa palau Santjoans i Sousa; paviment ceràmic.
+  ob: Procedeix de Auca de Animales acuáticos editada per la Viuda d’Agustin Laborda. València 1780.
+- id: "15"
+  nom: Lleó
+  pagina: 41
+  imatge: cataleg/15-lleo.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços
+  m: 20,50 x 20,50 V cm.
+  c: Groc, verd clar, taronja, blau; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Lleó rampant sobre illeta amb eix diagonal.
+  lf: Cinctorres, Casa palau de Santjoans i Sousa paviment.
+  ob: Procedeix possiblement del repertori de l’auca Sol i Lluna. Agustin Laborda, València 1752.
+- id: "16"
+  nom: Pardal
+  pagina: 42
+  imatge: cataleg/16-pardal.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços
+  m: 20,50 x 20,50 cm.
+  c: Verd, groc, taronja, marró;perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Sobre una illeta i amb una rama i fruit en el pic, pardal; pot ser, un cuco.
+  lf: Cinctorres, casa palau Santjoans i Sousa; paviment ceràmic
+  ob: Procedeix de Auca de Aves editada per viuda d’Agustin Laborda en València 1790, o be de anònima meitat s. XVIII.
+- id: "17"
+  nom: Elefant
+  pagina: 43
+  imatge: cataleg/17-elefant.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: Verd, groc, marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Elefant, sobre illeta amb diagonal.
+  lf: Cinctorres casa palau Santjoans i Sousa; paviment ceràmic del saló principal.
+  ob: Procedeix de Auca de Animales terrestres. Agustin Laborda, editada en València 1760.
+- id: "18"
+  nom: Granota
+  pagina: 44
+  imatge: cataleg/18-granota.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: Verd turquesa, verd groc, marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Granota sobre illeta en l’eix diagonal i fulles.
+  lf: Cinctorres casa Santjoans i Sousa; paviment del saló principal.
+  ob: Procedeix de Auca de Animales acuáticos editada en València per la viuda d’Agustin Laborda 1780.
+- id: "19"
+  nom: Moltó
+  pagina: 45
+  imatge: cataleg/19-molto.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: Verd turquesa, groc, taronja, marró, blau; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Moltó sobre illeta fictícia.
+  lf: Cinctorres, casa Santjoans i Sousa; paviment dels saló principal.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda editada en València 1760.
+- id: "20"
+  nom: Jaguar
+  pagina: 46
+  imatge: cataleg/20-jaguar.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: Verd, groc, morró, blau; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Jaguar, amb una aranya, assegut sobre una illeta fictícia.
+  lf: Cinctorres, casa Santjoans i Sousa; paviment ceràmic del saló principal.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda, editada en València any 1760.
+- id: "21"
+  nom: Cabró
+  pagina: 47
+  imatge: cataleg/21-cabro.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: Verd turquesa, verd clar, groc, taronja, marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Cabró , sobre illeta amb eix diagonal.
+  lf: Cinctorres, casa Santjoans i Sousa; paviment del saló principal.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda, editada en València 1760.
+- id: "22"
+  nom: Llebre
+  pagina: 48
+  imatge: cataleg/22-llebre.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços
+  m: 20,50 x 20,50 cm
+  c: Verd clar, taronja, groc, marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c
+  o: Llebre corrent; sobre illeta amb fulles.
+  lf: Cinctorres, casa Santjoans i Sousa; paviment ceràmic del saló principal.
+  ob: Procedeix de Auca de Animales terrestres editada en València per Agustin Laborda 1760.
+- id: "23"
+  nom: Cuco (segona rajola)
+  pagina: 49
+  imatge: cataleg/23-cuco-2.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços
+  m: 20,50 x 20,50 cm.
+  c: Verd, groc, taronja, marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Sobre una illeta i amb una rama al pic; pot ser, un cuco.
+  lf: Cinctorres, casa palau Santjoans i Sousa, paviment ceràmic.
+  ob: Procedeix de Auca de aves editada per viuda d’Agustin Laborda en València 1790, o be d’anònima meitat s. XVIII.
+- id: "24"
+  nom: Cérvol
+  pagina: 50
+  imatge: cataleg/24-cervol.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 20,50 x 20,50 cm.
+  c: Verd clar, taronja, blau,marró; perfilat amb manganesos.
+  f: València.
+  cr: 1790 c.
+  o: Cérvol sobre illeta amb eix diagonal.
+  lf: Cinctorres casa palau Santjoans i Sousa; paviment ceràmic del saló principal.
+  ob: Procedeix de Auca de Animales terrestres d’Agustin Laborda, editada en València 1760.
+- id: "25"
+  nom: Ram amb taronja i narcís
+  pagina: 51
+  imatge: cataleg/25-ram-amb-taronja-i-narcis.jpg
+  d: Rajola de dibuix complet sense enllaços.
+  m: 20,50 x 20,50cm.
+  c: Blau, groc, taronja, morat; perfilat amb manganesos.
+  f: València.
+  cr: 1760-1770.
+  o: Ram asimètric, taronja, narcís, circells, fulles, flor pentàmera.
+  lf: Cinctorres, casa Santjoans i Sousa, paviment del saló principal.
+- id: "26"
+  nom: Ram amb taronja i flor trímera
+  pagina: 52
+  imatge: cataleg/26-ram-amb-taronja-i-flor-trimera.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços
+  m: 21 x21 2 cm.
+  c: Verd, groc, taronja, blau turquesa; perfilat amb manganesos.
+  f: València.
+  cr: 1770-1780.
+  o: Ram de flors asimètric, amb taronja. circells, fulles i flor trímera.
+  lf: Cinctorres, casa Santjoans i Sousa, paviment del saló principal.
+- id: "27"
+  nom: Ram amb ranuncle, margarida i tulipa
+  pagina: 53
+  imatge: cataleg/27-ram-amb-ranuncle-margarida-i-tulipa.jpg
+  d: Rajola quadrada de dibuix complet; sense enllaços.
+  m: 21 x 21 x2 cm.
+  c: Verd, groc, blau turquesa, taronja, morat; perfilat amb manganesos.
+  f: València.
+  cr: 1770- 1780.
+  o: Ram asimètric, amb ranuncle, margarida, tulipa i fulles.
+  lf: Cinctorres casa Santjoans; paviment saló principal.
+- id: "28"
+  nom: Imitació de marbre
+  pagina: 54
+  imatge: cataleg/28-imitacio-de-marbre.jpg
+  d: Rajola quadrada de dibuix complet, sense enllaços.
+  m: 20x20 cm.
+  c: groc, morat, agrisat de manganesos.
+  f: València.
+  cr: 1787-1790.
+  o: Dibuix imitant marbre.
+- id: "29"
+  nom: Rajola de fang cuit
+  pagina: 55
+  imatge: cataleg/29-rajola-de-fang-cuit.jpg
+  d: Rajola de fang cuit

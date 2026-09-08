@@ -1,0 +1,190 @@
+Title:           Microsoft Word - treball17x24.doc
+Author:          orengad
+Creator:         PScript5.dll Version 5.2.2
+Producer:        Acrobat Distiller 8.1.0 (Windows)
+CreationDate:    Thu Jul  8 10:30:36 2010 CEST
+ModDate:         Thu Jul  8 10:30:36 2010 CEST
+Custom Metadata: no
+Metadata Stream: yes
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           58
+Encrypted:       no
+Page size:       482 x 680 pts
+Page rot:        0
+File size:       3113843 bytes
+Optimized:       yes
+PDF version:     1.4
+
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+TimesNewRomanPS-BoldItalicMT         TrueType          WinAnsi          no  no  no     348  0
+TimesNewRomanPSMT                    TrueType          WinAnsi          no  no  no     353  0
+TimesNewRomanPS-BoldMT               TrueType          WinAnsi          no  no  no     322  0
+NKIBCF+Calibri                       CID TrueType      Identity-H       yes yes yes    323  0
+TimesNewRomanPS-ItalicMT             TrueType          WinAnsi          no  no  no     325  0
+Arial-BoldMT                         TrueType          WinAnsi          no  no  no     327  0
+Arial-ItalicMT                       TrueType          WinAnsi          no  no  no     329  0
+ArialMT                              TrueType          WinAnsi          no  no  no     331  0
+
+page   num  type   width height color comp bpc  enc interp  object ID x-ppi y-ppi size ratio
+--------------------------------------------------------------------------------------------
+   1     0 image     678    88  icc     3   8  jpeg   no       357  0   150   151 10.9K 6.3%
+   1     1 image     678    88  icc     3   8  jpeg   no       358  0   150   151 13.9K 8.0%
+   1     2 image     678    88  icc     3   8  jpeg   no       359  0   150   151 14.7K 8.4%
+   1     3 image     678    88  icc     3   8  jpeg   no       360  0   150   151 14.9K 8.5%
+   1     4 image     678    88  icc     3   8  jpeg   no       361  0   150   151 14.9K 8.5%
+   1     5 image     678    88  icc     3   8  jpeg   no       362  0   150   151 14.8K 8.5%
+   1     6 image     678    88  icc     3   8  jpeg   no       363  0   150   151 14.6K 8.4%
+   1     7 image     678    88  icc     3   8  jpeg   no       364  0   150   151 14.4K 8.2%
+   1     8 image     678    88  icc     3   8  jpeg   no       365  0   150   151 14.1K 8.1%
+   1     9 image     678    87  icc     3   8  jpeg   no       356  0   150   150 15.6K 9.0%
+   7    10 image     657   590  icc     3   8  jpeg   no        23  0   186   187 51.5K 4.5%
+   7    11 image     280   280  icc     3   8  jpeg   no        24  0    93   104 9647B 4.1%
+   9    12 image     600   338  icc     3   8  jpeg   no        31  0   176   139  201K  34%
+  10    13 image     706   469  icc     3   8  jpeg   no        35  0   150   150 52.5K 5.4%
+  11    14 image     355    60  icc     3   8  jpeg   no        39  0   150   152 1901B 3.0%
+  11    15 image     355    60  icc     3   8  jpeg   no        40  0   150   152 3444B 5.4%
+  11    16 image     355    60  icc     3   8  jpeg   no        41  0   150   152 3077B 4.8%
+  11    17 image     355    60  icc     3   8  jpeg   no        42  0   150   152 3790B 5.9%
+  11    18 image     355    60  icc     3   8  jpeg   no        43  0   150   152 3287B 5.1%
+  11    19 image     355    60  icc     3   8  jpeg   no        44  0   150   152 3354B 5.2%
+  11    20 image     355    60  icc     3   8  jpeg   no        45  0   150   152 3863B 6.0%
+  11    21 image     355    60  icc     3   8  jpeg   no        46  0   150   152 3886B 6.1%
+  11    22 image     355    59  icc     3   8  jpeg   no        47  0   150   151 2456B 3.9%
+  12    23 image     339   107  icc     3   8  jpeg   no        51  0   150   151 3576B 3.3%
+  12    24 image     339   107  icc     3   8  jpeg   no        52  0   150   151 4989B 4.6%
+  12    25 image     339   107  icc     3   8  jpeg   no        53  0   150   151 5132B 4.7%
+  12    26 image     339   107  icc     3   8  jpeg   no        54  0   150   151 5011B 4.6%
+  12    27 image     339   107  icc     3   8  jpeg   no        55  0   150   151 4824B 4.4%
+  14    28 image     362   178  icc     3   8  jpeg   no        64  0   150   151 8580B 4.4%
+  14    29 image     362   178  icc     3   8  jpeg   no        62  0   150   151 9151B 4.7%
+  14    30 image     362   177  icc     3   8  jpeg   no        63  0   150   150 7038B 3.7%
+  16    31 image     567   356  icc     3   8  jpeg   no        71  0   150   150 39.8K 6.7%
+  16    32 image     567   356  icc     3   8  jpeg   no        72  0   150   150 44.4K 7.5%
+  19    33 image     696   901  icc     3   8  jpeg   no        82  0   209   173  142K 7.8%
+  21    34 image     640    72  icc     3   8  jpeg   no        89  0   150   152 11.4K 8.5%
+  21    35 image     640    72  icc     3   8  jpeg   no        90  0   150   152 10.1K 7.5%
+  21    36 image     640    72  icc     3   8  jpeg   no        91  0   150   152 9647B 7.0%
+  21    37 image     640    72  icc     3   8  jpeg   no        92  0   150   152 9.78K 7.2%
+  21    38 image     640    72  icc     3   8  jpeg   no        93  0   150   152 8859B 6.4%
+  21    39 image     640    71  icc     3   8  jpeg   no        94  0   150   150 9.85K 7.4%
+  22    40 image     511   114  icc     3   8  jpeg   no        98  0   150   151 12.0K 7.0%
+  22    41 image     511   114  icc     3   8  jpeg   no        99  0   150   151 16.1K 9.5%
+  22    42 image     511   114  icc     3   8  jpeg   no       100  0   150   151 16.5K 9.6%
+  22    43 image     511   114  icc     3   8  jpeg   no       101  0   150   151 16.6K 9.7%
+  22    44 image     511   114  icc     3   8  jpeg   no       102  0   150   151 15.5K 9.1%
+  22    45 image     511   113  icc     3   8  jpeg   no       103  0   150   150 12.8K 7.5%
+  23    46 image     509   114  icc     3   8  jpeg   no       107  0   150   151 10.2K 6.0%
+  23    47 image     509   114  icc     3   8  jpeg   no       108  0   150   151 11.4K 6.7%
+  23    48 image     509   114  icc     3   8  jpeg   no       109  0   150   151 11.3K 6.7%
+  23    49 image     509   114  icc     3   8  jpeg   no       110  0   150   151 10.6K 6.2%
+  23    50 image     509   114  icc     3   8  jpeg   no       111  0   150   151 10.8K 6.3%
+  23    51 image     509   113  icc     3   8  jpeg   no       112  0   150   150 9500B 5.5%
+  27    52 image     768   193  icc     3   8  jpeg   no       125  0   150   151 8818B 2.0%
+  27    53 image     768   193  icc     3   8  jpeg   no       126  0   150   151 16.4K 3.8%
+  27    54 image     768   193  icc     3   8  jpeg   no       127  0   150   151 22.0K 5.1%
+  27    55 image     768   192  icc     3   8  jpeg   no       128  0   150   150 7020B 1.6%
+  28    56 image     767   192  icc     3   8  jpeg   no       132  0   150   150 10.0K 2.3%
+  28    57 image     767   192  icc     3   8  jpeg   no       133  0   150   150 24.0K 5.6%
+  28    58 image     767   192  icc     3   8  jpeg   no       134  0   150   150 22.5K 5.2%
+  28    59 image     767   192  icc     3   8  jpeg   no       135  0   150   150 10.1K 2.3%
+  29    60 image     782   192  icc     3   8  jpeg   no       139  0   150   150 7805B 1.7%
+  29    61 image     782   192  icc     3   8  jpeg   no       140  0   150   150 23.5K 5.3%
+  29    62 image     782   192  icc     3   8  jpeg   no       141  0   150   150 22.5K 5.1%
+  29    63 image     782   192  icc     3   8  jpeg   no       142  0   150   150 6168B 1.4%
+  30    64 image     767   256  icc     3   8  jpeg   no       146  0   150   150 10.3K 1.8%
+  30    65 image     767   256  icc     3   8  jpeg   no       147  0   150   150 30.4K 5.3%
+  30    66 image     767   256  icc     3   8  jpeg   no       148  0   150   150 10.4K 1.8%
+  31    67 image     768   192  icc     3   8  jpeg   no       152  0   150   150 8443B 1.9%
+  31    68 image     768   192  icc     3   8  jpeg   no       153  0   150   150 21.5K 5.0%
+  31    69 image     768   192  icc     3   8  jpeg   no       154  0   150   150 23.7K 5.5%
+  31    70 image     768   192  icc     3   8  jpeg   no       155  0   150   151 9272B 2.1%
+  32    71 image     769   193  icc     3   8  jpeg   no       159  0   150   151 8304B 1.9%
+  32    72 image     769   193  icc     3   8  jpeg   no       160  0   150   151 21.7K 5.0%
+  32    73 image     769   193  icc     3   8  jpeg   no       161  0   150   151 22.3K 5.1%
+  32    74 image     769   192  icc     3   8  jpeg   no       162  0   150   150 9481B 2.1%
+  33    75 image     767   192  icc     3   8  jpeg   no       166  0   150   150 8306B 1.9%
+  33    76 image     767   192  icc     3   8  jpeg   no       167  0   150   150 22.7K 5.3%
+  33    77 image     767   192  icc     3   8  jpeg   no       168  0   150   150 22.0K 5.1%
+  33    78 image     767   192  icc     3   8  jpeg   no       169  0   150   151 7488B 1.7%
+  34    79 image     767   192  icc     3   8  jpeg   no       173  0   150   150 10.9K 2.5%
+  34    80 image     767   192  icc     3   8  jpeg   no       174  0   150   150 25.2K 5.8%
+  34    81 image     767   192  icc     3   8  jpeg   no       175  0   150   150 24.7K 5.7%
+  34    82 image     767   192  icc     3   8  jpeg   no       176  0   150   150 9.90K 2.3%
+  35    83 image     768   192  icc     3   8  jpeg   no       180  0   150   150 8954B 2.0%
+  35    84 image     768   192  icc     3   8  jpeg   no       181  0   150   150 21.4K 5.0%
+  35    85 image     768   192  icc     3   8  jpeg   no       182  0   150   150 20.1K 4.6%
+  35    86 image     768   192  icc     3   8  jpeg   no       183  0   150   150 7296B 1.6%
+  36    87 image     768   193  icc     3   8  jpeg   no       189  0   150   151 7959B 1.8%
+  36    88 image     768   193  icc     3   8  jpeg   no       190  0   150   151 25.7K 5.9%
+  36    89 image     768   193  icc     3   8  jpeg   no       187  0   150   151 29.2K 6.7%
+  36    90 image     768   192  icc     3   8  jpeg   no       188  0   150   150 12.2K 2.8%
+  37    91 image     768   193  icc     3   8  jpeg   no       194  0   150   151 7743B 1.7%
+  37    92 image     768   193  icc     3   8  jpeg   no       195  0   150   151 20.0K 4.6%
+  37    93 image     768   193  icc     3   8  jpeg   no       196  0   150   151 20.6K 4.7%
+  37    94 image     768   192  icc     3   8  jpeg   no       197  0   150   150 6673B 1.5%
+  38    95 image     767   192  icc     3   8  jpeg   no       201  0   150   150 8543B 1.9%
+  38    96 image     767   192  icc     3   8  jpeg   no       202  0   150   150 20.9K 4.8%
+  38    97 image     767   192  icc     3   8  jpeg   no       203  0   150   150 21.3K 4.9%
+  38    98 image     767   192  icc     3   8  jpeg   no       204  0   150   150 8979B 2.0%
+  39    99 image     768   193  icc     3   8  jpeg   no       208  0   150   151 8355B 1.9%
+  39   100 image     768   193  icc     3   8  jpeg   no       209  0   150   151 17.6K 4.1%
+  39   101 image     768   193  icc     3   8  jpeg   no       210  0   150   151 23.4K 5.4%
+  39   102 image     768   192  icc     3   8  jpeg   no       211  0   150   150 6567B 1.5%
+  40   103 image     769   193  icc     3   8  jpeg   no       215  0   150   151 10.7K 2.5%
+  40   104 image     769   193  icc     3   8  jpeg   no       216  0   150   151 27.1K 6.2%
+  40   105 image     769   193  icc     3   8  jpeg   no       217  0   150   151 27.2K 6.3%
+  40   106 image     769   193  icc     3   8  jpeg   no       218  0   150   151 9993B 2.2%
+  41   107 image     769   193  icc     3   8  jpeg   no       225  0   150   151 8621B 1.9%
+  41   108 image     769   193  icc     3   8  jpeg   no       222  0   150   151 23.2K 5.3%
+  41   109 image     769   193  icc     3   8  jpeg   no       223  0   150   151 22.3K 5.1%
+  41   110 image     769   193  icc     3   8  jpeg   no       224  0   150   151 9.98K 2.3%
+  42   111 image     766   192  icc     3   8  jpeg   no       229  0   150   150 9824B 2.2%
+  42   112 image     766   192  icc     3   8  jpeg   no       230  0   150   150 23.2K 5.4%
+  42   113 image     766   192  icc     3   8  jpeg   no       231  0   150   150 25.1K 5.8%
+  42   114 image     766   191  icc     3   8  jpeg   no       232  0   150   150 9.91K 2.3%
+  43   115 image     767   192  icc     3   8  jpeg   no       236  0   150   150 8170B 1.8%
+  43   116 image     767   192  icc     3   8  jpeg   no       237  0   150   150 23.3K 5.4%
+  43   117 image     767   192  icc     3   8  jpeg   no       238  0   150   150 24.1K 5.6%
+  43   118 image     767   192  icc     3   8  jpeg   no       239  0   150   151 7515B 1.7%
+  44   119 image     769   193  icc     3   8  jpeg   no       243  0   150   151 8362B 1.9%
+  44   120 image     769   193  icc     3   8  jpeg   no       244  0   150   151 23.8K 5.5%
+  44   121 image     769   193  icc     3   8  jpeg   no       245  0   150   151 23.3K 5.4%
+  44   122 image     769   192  icc     3   8  jpeg   no       246  0   150   150 7924B 1.8%
+  45   123 image     768   192  icc     3   8  jpeg   no       250  0   150   150 8964B 2.0%
+  45   124 image     768   192  icc     3   8  jpeg   no       251  0   150   150 22.9K 5.3%
+  45   125 image     768   192  icc     3   8  jpeg   no       252  0   150   150 23.3K 5.4%
+  45   126 image     768   192  icc     3   8  jpeg   no       253  0   150   151 8415B 1.9%
+  46   127 image     767   192  icc     3   8  jpeg   no       257  0   150   150 8366B 1.9%
+  46   128 image     767   192  icc     3   8  jpeg   no       258  0   150   150 23.6K 5.5%
+  46   129 image     767   192  icc     3   8  jpeg   no       259  0   150   150 25.5K 5.9%
+  46   130 image     767   191  icc     3   8  jpeg   no       260  0   150   150 9313B 2.1%
+  47   131 image     769   193  icc     3   8  jpeg   no       264  0   150   151 8694B 2.0%
+  47   132 image     769   193  icc     3   8  jpeg   no       265  0   150   151 19.6K 4.5%
+  47   133 image     769   193  icc     3   8  jpeg   no       266  0   150   151 23.2K 5.3%
+  47   134 image     769   192  icc     3   8  jpeg   no       267  0   150   150 7553B 1.7%
+  48   135 image     769   193  icc     3   8  jpeg   no       271  0   150   151 7514B 1.7%
+  48   136 image     769   193  icc     3   8  jpeg   no       272  0   150   151 18.0K 4.1%
+  48   137 image     769   193  icc     3   8  jpeg   no       273  0   150   151 20.3K 4.7%
+  48   138 image     769   192  icc     3   8  jpeg   no       274  0   150   150 7162B 1.6%
+  49   139 image     769   193  icc     3   8  jpeg   no       278  0   150   151 7816B 1.8%
+  49   140 image     769   193  icc     3   8  jpeg   no       279  0   150   151 22.2K 5.1%
+  49   141 image     769   193  icc     3   8  jpeg   no       280  0   150   151 26.0K 6.0%
+  49   142 image     769   192  icc     3   8  jpeg   no       281  0   150   150 9717B 2.2%
+  50   143 image     768   192  icc     3   8  jpeg   no       285  0   150   150 9013B 2.0%
+  50   144 image     768   192  icc     3   8  jpeg   no       286  0   150   150 18.4K 4.3%
+  50   145 image     768   192  icc     3   8  jpeg   no       287  0   150   150 20.3K 4.7%
+  50   146 image     768   192  icc     3   8  jpeg   no       288  0   150   150 9688B 2.2%
+  51   147 image     710   178  icc     3   8  jpeg   no       292  0   150   151 19.8K 5.4%
+  51   148 image     710   178  icc     3   8  jpeg   no       293  0   150   151 26.7K 7.2%
+  51   149 image     710   178  icc     3   8  jpeg   no       294  0   150   151 23.8K 6.4%
+  51   150 image     710   177  icc     3   8  jpeg   no       295  0   150   150 20.8K 5.7%
+  52   151 image     954   954  icc     3   8  jpeg   no       299  0   202   202  115K 4.3%
+  53   152 image     964   964  icc     3   8  jpeg   no       303  0   204   204  149K 5.5%
+  54   153 image     480   448  icc     3   8  jpeg   no       307  0   102    95 46.5K 7.4%
+  55   154 image     768   193  icc     3   8  jpeg   no       311  0   150   151 28.7K 6.6%
+  55   155 image     768   193  icc     3   8  jpeg   no       312  0   150   151 26.6K 6.1%

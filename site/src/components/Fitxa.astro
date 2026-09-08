@@ -1,0 +1,27 @@
+---
+// Una fitxa del catàleg (apartat 3.7): la fotografia de la rajola i els camps amb les lletres del llibre.
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { campsFitxa, type Fitxa } from '../lib/llibre';
+
+interface Props { fitxa: Fitxa }
+const { fitxa } = Astro.props;
+const imatges = import.meta.glob<ImageMetadata>('../../../assets/cataleg/*.jpg', { eager: true, import: 'default' });
+const img = imatges[`../../../assets/${fitxa.data.imatge}`];
+const camps = campsFitxa.filter(([k]) => fitxa.data[k]);
+---
+<article class="fitxa" id={`fitxa-${fitxa.id}`}>
+  <a class="fitxa-img" href={img.src} title="Obri la fotografia a mida completa">
+    <Image src={img} alt={fitxa.data.o ?? fitxa.data.d} width={900} loading="lazy" />
+  </a>
+  <div class="fitxa-text">
+    <header>
+      <span class="fitxa-num">{fitxa.id}</span>
+      <h3>{fitxa.data.nom}</h3>
+      <span class="fitxa-pag" title="Pàgina del PDF de 2010">p. {fitxa.data.pagina}</span>
+    </header>
+    <dl>
+      {camps.map(([k, etiqueta]) => (<><dt>{etiqueta}</dt><dd>{fitxa.data[k]}</dd></>))}
+    </dl>
+  </div>
+</article>

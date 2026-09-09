@@ -18,7 +18,7 @@ texto; el libro de la Diputación aún no se ha podido consultar (ver `TODO.md`,
 |---|---|
 | `source/` | Los originales, intocables: el PDF de julio de 2010 (58 págs., el texto de esta edición), el PDF de mayo de 2010 (47 págs., A4, entregado en la UJI, con las fotos a más resolución), la invitación de la Diputació a la presentación y las fotos de ese acto (`Llibre diputacio/`). |
 | `content/` | **Los masters recuperados**: un `.md` por capítulo, `cataleg.yaml` con las 29 fichas del catálogo y `llibre.yaml` con los metadatos. |
-| `assets/images/` | Las 13 fotografías y mapas del texto. `assets/cataleg/`: las 29 rajoles del catálogo. `assets/presentacio/`: la invitación y 11 fotos de la presentación de 2012. |
+| `assets/images/` | Las 13 fotografías y mapas del texto; los dos mapas del capítulo 1 se han redibujado en SVG desde OpenStreetMap (`extract/mapa/`) y los JPEG originales se conservan. `assets/cataleg/`: las 29 rajoles del catálogo. `assets/presentacio/`: la invitación y 11 fotos de la presentación de 2012. |
 | `extract/` | Cómo se ha sacado todo de los PDF: `extract.sh` (Poppler), `images.py` (recortes) y `check.py` (comprobación palabra a palabra). |
 | `site/` | El sitio web (Astro 7). Se publica en GitHub Pages con cada push a `main`. |
 | `CLAUDE.md` | Cómo está montado todo y las convenciones del proyecto. |

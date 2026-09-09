@@ -68,6 +68,8 @@ Consultar sus `CLAUDE.md` antes de reinventar decisiones.
 - **El catálogo es datos, no prosa**: `content/cataleg.yaml`, una entrada por rajola con los campos `d m c f cr o lf ob`
   (las letras del propio libro). El sitio lo pinta con `site/src/components/Fitxa.astro` al final del capítulo 3 y como
   galería en `/cataleg/`. Esto es lo que permitirá, más adelante, enlazar cada ficha con su pieza en el visor (T-06).
+- **Los dos mapas del capítulo 1 son SVG generados** (`extract/mapa/`, T-10), como el mapa dels Ports de masosdemorella,
+  del que se copió la librería. Los originales del PDF eran un mapa comercial y uno de Wikimedia, ilegibles.
 - **Sin Pagefind** (5.700 palabras no lo justifican) y **sin EPUB/PDF generado** (`scripts/llibre.mjs` no se copió). Si
   algún día se quieren, copiarlos de masosdemorella.
 - Página **«El llibre»** (`/llibre/`): la edición de la Diputación, la invitación y las fotos de la presentación de 2012.
@@ -81,14 +83,20 @@ source/                     originales (intocables): los dos PDF, la invitación
 extract/extract.sh          texto por página, XML de posiciones y renders a 300 ppp de los dos PDF → extract/{text,xml,render}/ (ignorados)
 extract/images.py           recorta las 13 fotos del texto y las 29 rajoles a assets/ (tabla FIGURES; toma el PDF de mayo)
 extract/check.py            comprueba palabra a palabra content/ + cataleg.yaml contra el PDF de julio. DEBE dar 0 y 0.
+extract/mapa/               los dos mapas SVG del capítulo 1: descarrega.py (Overpass → castello.osm.json, VERSIONADO, ~1 MB),
+                            castello.py (división comarcal del libro: Vilafranca en l'Alt Maestrat; clasifica los tramos),
+                            mapa_comarques.py y mapa_ports.py, mapalib.py + text2path.mjs (copiados de masosdemorella).
+                            `extract/mapa/genera.sh [--png]` (o `npm run mapes` en site/) los regenera; opentype.js viene con `npm install`.
 content/NN-slug.md          MASTERS: un .md por capítulo. Frontmatter title/order/pages; anclas <a id="pNN" class="pag" data-p="NN">;
                             figuras ![pie de esta edición](../assets/images/NN-x.jpg); notas [^n] al final; la leyenda del 3.7 es un <dl>.
 content/cataleg.yaml        las 29 fichas (id "01".."29", nom de esta edición, pagina, imatge, d m c f cr o lf ob)
 content/llibre.yaml         metadatos: título, autora, fechas, contexto, edicio_impresa (datos de la Diputación)
-assets/images/              13 fotos/mapas del texto, NN-descripcion.jpg (orden de aparición)
+assets/images/              13 fotos/mapas del texto, NN-descripcion.jpg (orden de aparición); 02 y 03 se publican como .svg
+                            (generados) y sus .jpg se conservan sin usar
 assets/cataleg/             29 rajoles, NN-nom.jpg (orden del catálogo)
 assets/presentacio/         00-invitacio.jpg (render del PDF) + 11 fotos del acto de 2012 (las 3 restantes de source/ no son del acto)
-site/                       Astro 7. src/pages: index, [slug], cataleg, llibre, edicio, autora, robots.txt. src/components/Fitxa.astro.
+site/                       Astro 7. src/pages: index, [slug], cataleg, llibre, edicio, autora, robots.txt, imatges/[file] (sirve los SVG
+                            a tamaño completo). src/components/Fitxa.astro.
                             src/lib/llibre.ts (capitols, cataleg, figures, href). content.config.ts: colecciones llibre, cataleg, meta.
 .github/workflows/deploy.yml  build + Pages en cada push a main (copiado de masosdemorella)
 ```

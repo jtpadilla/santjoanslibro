@@ -7,10 +7,11 @@ import { cataleg, figures, href, slugOf, titolCurt } from '../lib/llibre';
 const fitxes = await cataleg();
 const figs = await figures();
 const rajoles = import.meta.glob<ImageMetadata>('../../../assets/cataleg/*.jpg', { eager: true, import: 'default' });
-const fotos = import.meta.glob<ImageMetadata>('../../../assets/images/*.jpg', { eager: true, import: 'default' });
+const fotos = import.meta.glob<ImageMetadata>('../../../assets/images/*.{jpg,svg}', { eager: true, import: 'default' });
 const perFitxer = (m: Record<string, ImageMetadata>) => Object.fromEntries(Object.entries(m).map(([k, v]) => [k.split('/').pop()!, v]));
 const rajola = perFitxer(rajoles);
 const foto = perFitxer(fotos);
+const svg = (file: string) => file.endsWith('.svg');
 ---
 <Base title="Catàleg" description="Les rajoles del paviment de la casa Santjoans catalogades en el llibre, en imatges, i les fotografies del text.">
   <h1>Catàleg</h1>
@@ -29,16 +30,16 @@ const foto = perFitxer(fotos);
   </ul>
 
   <h2 id="text">Fotografies del text</h2>
-  <p>Les {figs.length} fotografies i mapes dels capítols 1 a 3, en l'ordre en què apareixen. El llibre no els posa peu: els d'ací són d'esta edició. Cada imatge enllaça amb el fitxer a resolució original.</p>
+  <p>Les {figs.length} fotografies i mapes dels capítols 1 a 3, en l'ordre en què apareixen. El llibre no els posa peu: els d'ací són d'esta edició. Cada imatge enllaça amb el fitxer a resolució original. Els dos mapes del capítol 1 s'han redibuixat per a esta edició amb dades d'OpenStreetMap (vegeu <a href={href('edicio/')}>Sobre esta edició</a>).</p>
   <ul class="galeria">
     {figs.map((f) => (
       <li>
         <figure>
           <a href={foto[f.file].src} title="Obri la imatge a resolució original">
-            <Image src={foto[f.file]} alt={f.caption} width={640} />
+            <Image src={foto[f.file]} alt={f.caption} width={640} layout={svg(f.file) ? 'none' : undefined} />
           </a>
           <figcaption>
-            <span class="num">{f.n}</span>{f.caption}
+            <span class="num">{f.n}</span>{f.caption}{svg(f.file) ? ' (redibuixat per a esta edició)' : ''}
             <a class="on" href={href(`${slugOf(f.capitol)}/`)}>{titolCurt(f.capitol.data.title)}</a>
           </figcaption>
         </figure>

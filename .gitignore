@@ -13,3 +13,4 @@ extract/xml/
 extract/render/
 
 # El proyecto Astro tiene su propio .gitignore en site/ (dist, node_modules, .astro, logs)
+extract/mapa/preview/

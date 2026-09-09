@@ -48,6 +48,12 @@ Siete de las once fotos del acto (`DSCF*`) son de 480 × 360 px, copias reducida
 
 ## Resueltas
 
+### T-10 · Redibujar los dos mapas del capítulo 1 en SVG · 2026-09-09
+Los mapas del PDF (un póster comercial de las comarcas y un mapa de Wikimedia dels Ports) eran ilegibles. Se han
+sustituido por `assets/images/02-mapa-comarques-de-castello.svg` y `03-mapa-els-ports.svg`, generados en `extract/mapa/`
+desde OpenStreetMap con la librería de masosdemorella, siguiendo al libro en poner Vilafranca en l'Alt Maestrat. Los
+JPEG originales se conservan. Detalles en `NOTES.md`.
+
 ### T-09 · Publicar el repositorio y encender Pages · 2026-09-08
 Repositorio público `jtpadilla/santjoanslibro` (primer commit del usuario), Pages con origen **GitHub Actions**
 (`build_type=workflow`) y HTTPS forzado. El primer `deploy` falló hasta encender Pages, como en la portada; relanzado

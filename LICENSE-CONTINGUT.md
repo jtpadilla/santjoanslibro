@@ -16,6 +16,11 @@ auques reproduïdes al capítol 3 (*Auca de la Mare de Déu del Lledó* i *Auca 
 que el treball fotografia com a exemple. La invitació de la Diputació de Castelló i la seua nota de premsa (2012) es
 reprodueixen com a documents de l'edició impresa.
 
+Els dos mapes del capítol 1 (`assets/images/02-mapa-comarques-de-castello.svg` i `03-mapa-els-ports.svg`) són
+il·lustracions d'esta edició, generades a partir dels límits municipals i la línia de costa d'OpenStreetMap:
+© col·laboradors d'OpenStreetMap, llicència ODbL (https://www.openstreetmap.org/copyright). Es publiquen amb la mateixa
+llicència CC BY-NC-ND 4.0 que la resta de l'edició, amb eixa atribució.
+
 El programari del repositori (guions d'extracció i lloc web) té llicència MIT: vegeu `LICENSE`.
 
 ---
@@ -23,4 +28,5 @@ El programari del repositori (guions d'extracció i lloc web) té llicència MIT
 *Versión en castellano:* el texto y las fotografías del libro son © Francisca Julián Querol y archivo familiar; se publican bajo
 CC BY-NC-ND 4.0 (reconocimiento, no comercial, sin obra derivada). Las dos aucas fotografiadas son publicaciones ajenas
 reproducidas como ejemplo; la invitación y la nota de prensa de la Diputació de Castelló se reproducen como documentos
-de la edición impresa. El código del repositorio es MIT.
+de la edición impresa. Los dos mapas del capítulo 1 son ilustraciones de esta edición generadas con datos de
+OpenStreetMap (ODbL). El código del repositorio es MIT.

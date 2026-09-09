@@ -100,3 +100,52 @@ encendió con `gh api -X POST repos/jtpadilla/santjoanslibro/pages -f build_type
 primeros runs había fallado por no estar encendido, y el tercero, lanzado a mano con `gh workflow run`, publicó el
 sitio en https://jtpadilla.github.io/santjoanslibro/ (subruta, sin dominio propio de momento: T-02). El `build` del
 workflow no necesita nada fuera del repositorio: los masters, las imágenes y los PDF van dentro.
+
+---
+
+## 2026-09-09 · Los dos mapas del capítulo 1, redibujados (T-10)
+
+### Por qué
+Los dos mapas del apartado 1 no son de la autora: `02-mapa-comarques-de-castello.jpg` es un póster comercial
+(«Castellón/Castelló, comarcas y municipios», con leyenda por población e inset de España) y `03-mapa-els-ports.jpg`
+es un mapa de Wikimedia con nota «2005 CC-BY-SA», los dos borrosos ya en el PDF de mayo (1100 × 1025 y 900 × 809 px).
+masosdemorella había redibujado su «Mapa dels Ports» en SVG desde OpenStreetMap (`extract/mapa/`), y su mapa tenía
+**exactamente los mismos 13 municipios y rótulos** que el de este libro (los dos omiten Vilafranca). Se ha copiado esa
+librería (`mapalib.py`, `text2path.mjs`) y se han escrito dos generadores.
+
+### Datos: `extract/mapa/castello.osm.json` (versionado, ~1 MB)
+`descarrega.py` pide a Overpass (reintentando en tres servidores: se satura a menudo) las ocho comarcas de la provincia
+(relaciones `admin_level=7`: 1110951 els Ports, 1690971 l'Alt Maestrat, 1690974 el Baix Maestrat, 1111146 l'Alcalatén,
+1690975 la Plana Alta, 1690976 la Plana Baixa, 1690973 l'Alt Palància, 1690972 El Alto Mijares), los municipios
+(`admin_level=8`) de la caja que envuelve la provincia con margen (368, incluidos los vecinos de Teruel, Tarragona y
+València) y la línea de costa. Coordenadas a 5 decimales y tramos simplificados a ~20 m. Descarga del 9/9/2026,
+© colaboradores de OpenStreetMap, ODbL.
+- Las relaciones de comarca de OSM no siempre listan sus municipios (tres tenían cero), así que cada municipio se
+  asigna por su punto representativo dentro del polígono de la comarca. El punto es la media del **anillo mayor**: con
+  la media de todos los puntos, Castelló de la Plana caía al mar, porque les Columbretes son suyas.
+- Se guarda el id de cada tramo (`ref`) porque OSM comparte el mismo tramo entre los dos municipios que separa: con eso
+  `castello.py` clasifica cada tramo como municipal, comarcal o exterior (provincia/costa) sin unir polígonos (no hay
+  shapely; todo es biblioteca estándar).
+
+### Decisión: Vilafranca en l'Alt Maestrat, como el libro
+OSM sigue la demarcación oficial y pone Vilafranca en els Ports. Los dos mapas del libro la ponen en l'Alt Maestrat
+(en el póster está en el color de esa comarca; el mapa dels Ports no la dibuja). Se sigue al libro (`LLIBRE` en
+`castello.py`), como hizo masosdemorella, y «Sobre esta edició» lo dice.
+
+### Contenido de cada mapa
+- **02, comarcas**: las ocho comarcas rotuladas en valenciano (el póster iba en bilingüe: «Alt Millars/Alto Mijares»),
+  els Ports destacada, Cinctorres (destacada), Morella y Castelló de la Plana, Terol/Tarragona/València, el mar con la
+  costa real y les Columbretes, escala de 20 km. Sin la leyenda por población ni los 135 nombres de municipio, que
+  en el original eran ilegibles. Límites municipales muy finos, comarcales medios, provincia y costa gruesos.
+- **03, els Ports**: adaptación de `mapa_ports.py` de masosdemorella: los mismos 13 municipios y rótulos, Cinctorres
+  destacada en vez de Morella, y los vecinos en trazo tenue con «Alt Maestrat» y «Baix Maestrat» rotulados, como el
+  original. Escala de 5 km. Los tramos que quedan fuera del encuadre se omiten (el SVG pasaba de 300 a 124 KB).
+
+### En el sitio
+`rehype-book.mjs` ya venía preparado para SVG (ancho real del viewBox, enlace a tamaño completo), pero faltaban el
+endpoint `src/pages/imatges/[file].ts` y `opentype.js` en `devDependencies`; se han copiado de masosdemorella.
+`cataleg.astro` incluye ahora los `.svg` en la galería de fotografías del texto y marca «redibuixat per a esta edició».
+Pies de figura con la atribución a OpenStreetMap (la ODbL obliga a citarla donde se muestre), y párrafo en «Sobre esta
+edició» y en `LICENSE-CONTINGUT.md`. `check.py` sigue dando 0 y 0 (los pies no cuentan). Los JPEG originales siguen en
+`assets/images/` y `images.py` los sigue extrayendo; no se usan en el sitio.
+

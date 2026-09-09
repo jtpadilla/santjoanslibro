@@ -12,6 +12,7 @@ const perFitxer = (m: Record<string, ImageMetadata>) => Object.fromEntries(Objec
 const rajola = perFitxer(rajoles);
 const foto = perFitxer(fotos);
 const svg = (file: string) => file.endsWith('.svg');
+const redibuixat = (file: string) => svg(file) || file.includes('-redibuixat.');
 ---
 <Base title="Catàleg" description="Les rajoles del paviment de la casa Santjoans catalogades en el llibre, en imatges, i les fotografies del text.">
   <h1>Catàleg</h1>
@@ -30,7 +31,7 @@ const svg = (file: string) => file.endsWith('.svg');
   </ul>
 
   <h2 id="text">Fotografies del text</h2>
-  <p>Les {figs.length} fotografies i mapes dels capítols 1 a 3, en l'ordre en què apareixen. El llibre no els posa peu: els d'ací són d'esta edició. Cada imatge enllaça amb el fitxer a resolució original. Els dos mapes del capítol 1 s'han redibuixat per a esta edició amb dades d'OpenStreetMap (vegeu <a href={href('edicio/')}>Sobre esta edició</a>).</p>
+  <p>Les {figs.length} fotografies i mapes dels capítols 1 a 3, en l'ordre en què apareixen. El llibre no els posa peu: els d'ací són d'esta edició. Cada imatge enllaça amb el fitxer a resolució original. Els dos mapes del capítol 1 i el croquis del capítol 2 s'han redibuixat per a esta edició (vegeu <a href={href('edicio/')}>Sobre esta edició</a>).</p>
   <ul class="galeria">
     {figs.map((f) => (
       <li>
@@ -39,7 +40,7 @@ const svg = (file: string) => file.endsWith('.svg');
             <Image src={foto[f.file]} alt={f.caption} width={640} layout={svg(f.file) ? 'none' : undefined} />
           </a>
           <figcaption>
-            <span class="num">{f.n}</span>{f.caption}{svg(f.file) ? ' (redibuixat per a esta edició)' : ''}
+            <span class="num">{f.n}</span>{f.caption}{redibuixat(f.file) ? ' (redibuixat per a esta edició)' : ''}
             <a class="on" href={href(`${slugOf(f.capitol)}/`)}>{titolCurt(f.capitol.data.title)}</a>
           </figcaption>
         </figure>

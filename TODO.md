@@ -48,6 +48,11 @@ Siete de las once fotos del acto (`DSCF*`) son de 480 × 360 px, copias reducida
 
 ## Resueltas
 
+### T-11 · Croquis de la plaça Vella redibujado · 2026-09-09
+El usuario generó con Gemini una versión del croquis a mano del capítulo 2 (mismos edificios y rótulos, sobre pergamino,
+con rosa de los vientos añadida). Publicada como `assets/images/04-croquis-placa-vella-redibuixat.jpg`; el original del
+PDF se conserva. Anotado en el pie, en «Sobre esta edició» y en `LICENSE-CONTINGUT.md`.
+
 ### T-10 · Redibujar los dos mapas del capítulo 1 en SVG · 2026-09-09
 Los mapas del PDF (un póster comercial de las comarcas y un mapa de Wikimedia dels Ports) eran ilegibles. Se han
 sustituido por `assets/images/02-mapa-comarques-de-castello.svg` y `03-mapa-els-ports.svg`, generados en `extract/mapa/`

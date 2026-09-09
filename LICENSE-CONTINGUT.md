@@ -21,6 +21,9 @@ il·lustracions d'esta edició, generades a partir dels límits municipals i la 
 © col·laboradors d'OpenStreetMap, llicència ODbL (https://www.openstreetmap.org/copyright). Es publiquen amb la mateixa
 llicència CC BY-NC-ND 4.0 que la resta de l'edició, amb eixa atribució.
 
+El croquis de la plaça Vella del capítol 2 (`assets/images/04-croquis-placa-vella-redibuixat.jpg`) és una imatge generada
+amb Gemini (Google) a partir del croquis a mà de l'autora, que es conserva a `04-croquis-placa-vella.jpg`.
+
 El programari del repositori (guions d'extracció i lloc web) té llicència MIT: vegeu `LICENSE`.
 
 ---

@@ -92,7 +92,8 @@ content/NN-slug.md          MASTERS: un .md por capítulo. Frontmatter title/ord
 content/cataleg.yaml        las 29 fichas (id "01".."29", nom de esta edición, pagina, imatge, d m c f cr o lf ob)
 content/llibre.yaml         metadatos: título, autora, fechas, contexto, edicio_impresa (datos de la Diputación)
 assets/images/              13 fotos/mapas del texto, NN-descripcion.jpg (orden de aparición); 02 y 03 se publican como .svg
-                            (generados) y sus .jpg se conservan sin usar
+                            (generados) y 04 como 04-croquis-placa-vella-redibuixat.jpg (Gemini, T-11); los .jpg del PDF se
+                            conservan sin usar (images.py los sigue regenerando)
 assets/cataleg/             29 rajoles, NN-nom.jpg (orden del catálogo)
 assets/presentacio/         00-invitacio.jpg (render del PDF) + 11 fotos del acto de 2012 (las 3 restantes de source/ no son del acto)
 site/                       Astro 7. src/pages: index, [slug], cataleg, llibre, edicio, autora, robots.txt, imatges/[file] (sirve los SVG

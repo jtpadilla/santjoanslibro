@@ -8,7 +8,7 @@ pages: [9, 17]
 
 <a id="p9" class="pag" data-p="9"></a>De totes les places que hi ha al poble de Cinctorres, la plaça Vella és la més menuda, però la més important de totes, on estan situats els edificis civils més representatius de la Vila com l’Ajuntament, d’estil aragonès (segons el professor de la Universitat de Castelló Víctor Mínguez, el més pur de la comarca), també l’edifici que ja en documents històrics s’anomena com l’hostal i la casa palau de Santjoans, que fa cantonera amb dita plaça i el carrer Sol de la Vila, o de la Solana. Aquest carrer està orientat direcció est i sud-est, i sobre ell es va formar el poble[^1].
 
-![Croquis de la plaça Vella: l’Ajuntament, l’hostal, la torre del Quartillo, la Sala Vella de la Vila, la casa Santjoans i el carrer Sol de la Vila](../assets/images/04-croquis-placa-vella.jpg)
+![Croquis de la plaça Vella: l’Ajuntament, l’hostal, la torre del Quartillo, la Sala Vella de la Vila, la casa Santjoans i el carrer Sol de la Vila (redibuixat per a esta edició, amb Gemini, a partir del croquis a mà del treball)](../assets/images/04-croquis-placa-vella-redibuixat.jpg)
 
 La façana de la casa Santjoans és austera, de pedra picada, amb rafels dobles de fusta, d’estil aragonès i planta quadrada.
 Damunt de la porta principal hi ha un gran escut de pedra, on s’aprecien les armes de diferents famílies nobles lligades a la història de Cinctorres.

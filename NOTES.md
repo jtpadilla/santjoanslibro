@@ -149,3 +149,17 @@ Pies de figura con la atribución a OpenStreetMap (la ODbL obliga a citarla dond
 edició» y en `LICENSE-CONTINGUT.md`. `check.py` sigue dando 0 y 0 (los pies no cuentan). Los JPEG originales siguen en
 `assets/images/` y `images.py` los sigue extrayendo; no se usan en el sitio.
 
+---
+
+## 2026-09-09 · Croquis de la plaça Vella redibujado con Gemini (T-11)
+
+El croquis del capítulo 2 (`04-croquis-placa-vella.jpg`, 1111 × 792, foto de un dibujo a mano) lo ha redibujado el
+usuario con Gemini a partir de esa imagen: pergamino con los mismos edificios y rótulos (Ajuntament, L'Hostal, Torre del
+Quartillo, Casa Sanjoans, Plaça Vella, Sala Vella de la Vila, Carrer Sol de la Vila). La imagen llegó como JPEG de
+2424 × 1728 y se guarda reducida a 2000 px y calidad 88 (`04-croquis-placa-vella-redibuixat.jpg`, ~0,5 MB); el sufijo
+`-redibuixat` es lo que `cataleg.astro` usa para marcarla en la galería (junto con los `.svg`). El original del PDF sigue
+en `assets/images/` y `images.py` lo sigue extrayendo. Se ha comprobado a ojo que la versión nueva no cambia ni añade
+nada al dibujo salvo la **rosa de los vientos**, que sitúa el norte arriba: el croquis original no tiene orientación,
+aunque el texto dice que el carrer Sol de la Vila «està orientat direcció est i sud-est», lo que es compatible con ella.
+Se dice en «Sobre esta edició».
+

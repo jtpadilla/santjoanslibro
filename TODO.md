@@ -17,12 +17,6 @@ Publicado en la subruta `jtpadilla.github.io/santjoanslibro/` (ver «Resueltas»
 santjoans.es o franciscajulianquerol.es, tendrá dominio propio; `href()` y `astro.config.mjs` ya lo soportan
 (`SITE_URL`, `BASE_PATH`, `public/CNAME`). Si cambia, actualizar la URL de cita en `edicio.astro` y en `README.md`.
 
-### T-03 · Ficha en la portada franciscajulianquerol
-Seguir «Cómo añadir un proyecto» de su `CLAUDE.md`: función `santjoanslibro()` en `tools/metriques.py` (¿qué se cuenta?:
-1 texto de ~5.700 palabras, 13 fotografías, 29 fichas; no sumar las rajoles a `peces`, que ya cuenta santjoans),
-`content/projectes/7-santjoanslibro.yaml`, portada, tipo (¿`llibre`, como masosdemorella?) y los textos que dicen
-«cinco proyectos» → seis. También el enlace de vuelta desde santjoans («Información del proyecto») y desde masosdemorella.
-
 ### T-04 · Confirmar quién sale en las fotos de la presentación
 Los pies de `llibre.astro` describen lo que se ve (la taula, los diputados, el público). Preguntar al usuario los
 nombres y si las tres fotos apartadas (comida de 2013, Alcañiz y Caspe, IMG_2048) tienen que ver con el libro.
@@ -47,6 +41,13 @@ Siete de las once fotos del acto (`DSCF*`) son de 480 × 360 px, copias reducida
 ---
 
 ## Resueltas
+
+### T-03 · Ficha en la portada franciscajulianquerol · 2026-09-09
+La ficha la hizo la portada el 2026-09-08 (su T-11): función `santjoanslibro()` en su `tools/metriques.py` (1 texto,
+13 fotografías, 29 fichas; las rajoles no se suman), ficha `3-santjoanslibro.yaml` en tercer lugar, tipo `llibre`.
+Hoy, los enlaces de vuelta (su T-12): el pie de cada página de este sitio enlaza a la portada, como masosdemorella;
+santjoans tiene un botón «Leer el estudio» en su presentación, en los cuatro idiomas; masosdemorella enlaza al libro en
+el pie y en «L'autora».
 
 ### T-11 · Croquis de la plaça Vella redibujado · 2026-09-09
 El usuario generó con Gemini una versión del croquis a mano del capítulo 2 (mismos edificios y rótulos, sobre pergamino,

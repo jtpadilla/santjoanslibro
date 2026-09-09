@@ -163,3 +163,12 @@ nada al dibujo salvo la **rosa de los vientos**, que sitúa el norte arriba: el 
 aunque el texto dice que el carrer Sol de la Vila «està orientat direcció est i sud-est», lo que es compatible con ella.
 Se dice en «Sobre esta edició».
 
+---
+
+## 2026-09-09 · Enlaces de vuelta con la familia (T-03)
+
+La portada franciscajulianquerol.es ya tenía la ficha de este libro desde el 08/09. Se cierran los enlaces en sentido
+contrario: el pie de `Base.astro` lleva la misma línea que masosdemorella («Tota l'obra de l'autora…») hacia
+`franciscajulianquerol.es/ca/`; el visor santjoans.es tiene un tercer botón en su presentación, «Leer el estudio», que
+apunta aquí; y masosdemorella enlaza a este libro en el pie y en «L'autora». La dirección enlazada es la de GitHub
+Pages: si algún día hay dominio propio (T-02), hay que cambiarla en los tres sitios y en la ficha de la portada.

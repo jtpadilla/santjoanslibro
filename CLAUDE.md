@@ -20,7 +20,8 @@ solo es una vista de esos masters.
 **Estado: BOCETO** (2026-09-08, primera sesión). Reproduce el PDF de julio de 2010. **El libro de la Diputación no se ha
 podido consultar**: el usuario intentará localizar un ejemplar para escanearlo y revisar esta edición contra él (T-01).
 Publicado en **https://jtpadilla.github.io/santjoanslibro/** (repositorio público `jtpadilla/santjoanslibro`, Pages con
-origen GitHub Actions, desde el 2026-09-08). Falta la ficha en la portada (T-03) y decidir si tendrá dominio propio (T-02).
+origen GitHub Actions, desde el 2026-09-08). Tiene ficha en la portada franciscajulianquerol.es desde el 2026-09-08 y los
+enlaces de vuelta desde el 2026-09-09 (T-03). Falta decidir si tendrá dominio propio (T-02).
 
 Idioma del libro: valenciano. UI del sitio: valenciano (como masosdemorella). Idioma de trabajo con el usuario: **castellano**.
 No se modifica el contenido del libro: la reconstrucción es fiel al PDF (erratas y todo, salvo lo anotado en `NOTES.md`).
@@ -29,7 +30,7 @@ No se modifica el contenido del libro: la reconstrucción es fiel al PDF (errata
 
 | Repositorio | Qué es | Relación con este |
 |---|---|---|
-| franciscajulianquerol | La portada: franciscajulianquerol.es. Indexa los proyectos y cuenta sus cifras con `tools/metriques.py` | Hay que añadirle este proyecto (T-03), siguiendo su «Cómo añadir un proyecto» |
+| franciscajulianquerol | La portada: franciscajulianquerol.es. Indexa los proyectos y cuenta sus cifras con `tools/metriques.py` | Este libro es el tercero de su índice (T-03); el pie de cada página enlaza de vuelta |
 | santjoans | El visor del pavimento (santjoans.es), 434 piezas en tres tamaños | Nació del mismo trabajo; su `santjoans-web/public/proyecto/EstudioSantjoans.pdf` es el PDF de julio que aquí es `source/` |
 | masosdemorella | El otro libro de la autora, reconstruido desde PDF | **El modelo de este repo**: `site/` se copió de ahí y se adaptó |
 | franciscaineditos | Escritos inéditos | `md/Castelló/Paviment ceràmic/index.md` es un texto de 2009 precursor de este trabajo |
